@@ -1,11 +1,11 @@
-from client_data.jokes_client import JokesClient
+from client_data.cats_client import CatsClient
 from client_data.email_verification_service import EmailVerificationService
 
 
 def main():
-    jokes_client = JokesClient()
-    joke = jokes_client.get_random_joke()
-    print(f"Random Joke: {joke}")
+    cats_client = CatsClient()
+    cat = cats_client.get_random_cat_image()
+    print(f"Random Joke: {cat}")
 
     email_service = EmailVerificationService()
     email = "example@email.com"
